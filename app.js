@@ -28,17 +28,7 @@ function checkCookie() {
     }
 }
 
-// 导航栏点击事件
-function navigationClick() {
-    document.querySelectorAll("nav a").forEach(function(link) {
-        link.addEventListener("click", function(event) {
-            if (link.href.includes("courseware.html") && !getCookie(usernameCookieName)) {
-                event.preventDefault();
-                window.location.href = "login.html";
-            }
-        });
-    });
-}
+
 
 // 注册表单提交事件
 function registerFormSubmit() {
